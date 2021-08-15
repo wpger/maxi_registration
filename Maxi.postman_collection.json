@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "d42fa89c-340d-4d51-a2ba-2e7005d49642",
+		"name": "Maxi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Maxi",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Referer",
+						"value": "https://www.maxi.ca/",
+						"type": "text"
+					},
+					{
+						"key": "x-lcl-apikey",
+						"value": "1JieazqsGLxLLuA6m0ECCLJxTAKi3N69",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"preferredName\":\"Martin\",\"familyName\":\"Chen\",\"province\":\"QC\",\"banner\":\"MAXI\",\"language\":\"EN\",\"email\":\"czy00202@yopmail.com\",\"optInStatus\":true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.pcoptimum.ca/loyalty/v3/inquiry/anon/flyers",
+					"protocol": "https",
+					"host": [
+						"api",
+						"pcoptimum",
+						"ca"
+					],
+					"path": [
+						"loyalty",
+						"v3",
+						"inquiry",
+						"anon",
+						"flyers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
